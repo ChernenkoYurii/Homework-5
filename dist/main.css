@@ -25,14 +25,13 @@ section {
   section input, section select, section #message {
     margin-top: 1%;
     background-color: #ebebeb;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5625rem;
     padding: 2% 2.5%;
     font-family: 'Merriweather', serif;
     border: none; }
   section select {
     background: transparent;
-    width: 100%;
     background-color: #ebebeb;
     color: grey;
     -webkit-appearance: none;
@@ -100,15 +99,18 @@ section {
   section .icons {
     display: flex;
     flex-direction: column;
-    margin-top: 2%; }
+    margin-top: 2%;
+    padding-bottom: 10%; }
     section .icons .items {
       display: flex; }
       section .icons .items .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 4rem;
         height: 4rem;
         background-color: #fa364a;
         border-radius: 40px;
-        padding: 2.5%;
         margin: 2% 2% 0 0; }
       section .icons .items span {
         color: #fff;
