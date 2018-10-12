@@ -1,0 +1,139 @@
+.form {
+    width: 845px;
+    margin: 2% auto;
+}
+section {
+    padding: 0 50px;
+    
+    display: flex;
+    flex-direction: column;
+    label:not(first-child), {
+        margin-top: 2.5%;
+    }
+    .msg {
+        margin-top: 2%;
+    }
+    .redy {
+        margin-top: 7%; 
+        font-size: 0.875rem;
+        line-height: 1.5625rem;
+        font-family: 'Montserrat', sans-serif;
+        color: $colorRd;
+    }
+    label, .msg {
+        font-size: 1rem;
+        line-height: 1.5625rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: $colorInp;
+    }
+    input, select, #message {
+        margin-top: 1%;
+        background-color: $colorBg;
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        padding: 2% 2.5%;
+        font-family: 'Merriweather', serif;
+        border: none;
+    }
+    select {
+        background: transparent;
+        width: 100%;
+        background-color: $colorBg;
+        color: grey;
+        -webkit-appearance: none;
+        background-image: url(https://cedcn.org/wp-content/themes/cedcn/images/icon-arrow_dropdown.svg);
+        background-position: 98% center;
+        background-repeat: no-repeat;
+        background-size: 3%;
+        /* for FF */
+        -moz-appearance: none;
+        text-indent: 0.01px; 
+        text-overflow: '';
+        /* for IE */
+        -ms-appearance: none;
+        appearance: none!important;
+      }
+      select::-ms-expand {
+        display: none;
+      }
+      #message {
+          resize: none;
+          height: 150px;
+      }
+      .check {
+          display: flex;
+          padding: 0 3% 0 0;
+          .chekP {
+              margin: 4% 0 0 2% ;
+              font-size: 1.125rem;
+              line-height: 1.5625rem;
+              font-family: 'Merriweather', serif;
+              text-transform: none;
+          }
+        .checkbox {
+            height: 22px;
+            margin-top: 4%;
+            overflow: hidden;
+            margin-left: 1px;
+            padding-right: 5px;
+          }
+          input[type="checkbox"] {
+            display:none;
+            
+          }
+          input[type="checkbox"], label span {
+    
+            display:inline-block;
+            margin:-1px 4px 0 -1px;
+    
+            width:25px;
+            height:25px;
+            vertical-align:middle;
+            cursor:pointer;
+          }
+      }
+      .submit {
+          border-top: 1px solid $colorLine;
+          margin-top: 3%;
+          padding: 4% 0 ;
+          display: flex;
+          justify-content: flex-end;
+          .butn {
+            color: $color;
+            background-color: $colorRd;
+            font-size: 0.875rem;
+            line-height: 1.5625rem;
+            font-family: 'Montserrat', sans-serif;
+            padding: 2% 4.5%;
+            text-decoration: none;
+		    border-radius: 40px;
+   		    transition: all 0.8s ease;
+   		    text-transform: uppercase;
+            &:hover {
+                background-color: $colorBg;
+                color: $colorInp;
+            }
+        }
+      }
+     .icons {
+         display: flex;
+         flex-direction: column;
+         margin-top: 2%;
+         .items {
+             display: flex;
+             .item {
+                 width: 4rem;
+                 height: 4rem;
+                 background-color: $colorIcon;
+                 border-radius: 40px;
+                 padding: 2.5%;
+                 margin: 2% 2% 0 0;
+             }
+            span {
+                color: $color;
+                font-size: 1.625rem;
+            }
+         }
+     } 
+}
