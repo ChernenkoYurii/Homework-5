@@ -1,10 +1,9 @@
 .form {
-    width: 845px;
+    max-width: 845px;
     margin: 2% auto;
 }
 section {
     padding: 0 50px;
-    
     display: flex;
     flex-direction: column;
     label:not(first-child), {
@@ -72,6 +71,7 @@ section {
               text-transform: none;
           }
         .checkbox {
+            min-width: 22px;
             height: 22px;
             margin-top: 4%;
             overflow: hidden;

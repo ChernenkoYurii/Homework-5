@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);@import url(https://fonts.googleapis.com/css?family=Merriweather);.form {
-  width: 845px;
+  max-width: 845px;
   margin: 2% auto; }
 
 section {
@@ -62,6 +62,7 @@ section {
       font-family: 'Merriweather', serif;
       text-transform: none; }
     section .check .checkbox {
+      min-width: 22px;
       height: 22px;
       margin-top: 4%;
       overflow: hidden;
