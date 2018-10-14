@@ -123,14 +123,21 @@ section {
          .items {
              display: flex;
              .item {
+                margin: 2% 2% 0 0;
+             }
+             a {
+                text-decoration: none; 
+                background-color: $colorIcon;
+                border-radius: 40px;
+                 width: 4rem;
+                 height: 4rem;
                  display: flex;
                  align-items: center;
                  justify-content: center;
-                 width: 4rem;
-                 height: 4rem;
-                 background-color: $colorIcon;
-                 border-radius: 40px;
-                 margin: 2% 2% 0 0;
+                 transition: all 0.8s ease;
+                 &:hover {
+                    background-color: $colorSelect;
+                 }
              }
             span {
                 color: $color;

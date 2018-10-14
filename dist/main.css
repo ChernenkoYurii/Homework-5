@@ -104,14 +104,19 @@ section {
     section .icons .items {
       display: flex; }
       section .icons .items .item {
+        margin: 2% 2% 0 0; }
+      section .icons .items a {
+        text-decoration: none;
+        background-color: #fa364a;
+        border-radius: 40px;
+        width: 4rem;
+        height: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 4rem;
-        height: 4rem;
-        background-color: #fa364a;
-        border-radius: 40px;
-        margin: 2% 2% 0 0; }
+        transition: all 0.8s ease; }
+        section .icons .items a:hover {
+          background-color: grey; }
       section .icons .items span {
         color: #fff;
         font-size: 1.625rem; }
